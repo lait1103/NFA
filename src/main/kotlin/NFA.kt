@@ -59,10 +59,11 @@ fun writeOutPut(data: Input, out: OutputStream = System.out) {
     out.write("${data.n}\n".toByteArray())
     out.write("${data.m}\n".toByteArray())
     out.write(("${data.start.first()}\n".toByteArray()))
-    data.finish.forEach {out.write("$it ".toByteArray()) }
+    data.finish.forEach { out.write("$it ".toByteArray()) }
     out.write("\n".toByteArray())
-    data.edges.forEach {out.write(("${it.key.first} ${it.key.second} ${it.value.first()}\n".toByteArray()))}
+    data.edges.forEach { out.write(("${it.key.first} ${it.key.second} ${it.value.first()}\n".toByteArray())) }
 }
+
 fun convertNFA2DFA(`in`: InputStream = System.`in`): Input {
     val input = getInput(`in`)
 
