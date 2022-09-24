@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.h0tk3y.spbsu.parallel.Tests$EmulatorTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-09-24T22:08:22" hostname="MBP-Dmitri" time="0.017">
+  <properties/>
+  <testcase name="testEmulator1" classname="com.h0tk3y.spbsu.parallel.Tests$EmulatorTests" time="0.012"/>
+  <testcase name="testEmulator2" classname="com.h0tk3y.spbsu.parallel.Tests$EmulatorTests" time="0.001"/>
+  <testcase name="testEmulator3" classname="com.h0tk3y.spbsu.parallel.Tests$EmulatorTests" time="0.001"/>
+  <testcase name="testEmulator4" classname="com.h0tk3y.spbsu.parallel.Tests$EmulatorTests" time="0.001"/>
+  <testcase name="testEmulator5" classname="com.h0tk3y.spbsu.parallel.Tests$EmulatorTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
