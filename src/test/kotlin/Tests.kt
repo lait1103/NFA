@@ -2,6 +2,8 @@ package com.h0tk3y.spbsu.parallel
 
 import org.junit.Test
 import java.io.File
+import java.nio.file.Files
+import kotlin.test.assertEquals
 
 class Tests {
     class EmulatorTests {
@@ -42,9 +44,11 @@ class Tests {
         }
 
         // DFA (equal to the input)
+
         @Test
         fun testConvertor2() {
-            writeOutPut(convertNFA2DFA(File("src/test/kotlin/resources/converter2.txt").inputStream()))
+            writeOutPut(convertNFA2DFA(File("src/test/kotlin/resources/converter2.txt").inputStream()), File("testConvertor2").outputStream())
+            assertEquals(Files.readAllLines(File("src/test/kotlin/resources/converter2.txt").toPath()),Files.readAllLines(File("testConvertor2").toPath()))
         }
     }
 
